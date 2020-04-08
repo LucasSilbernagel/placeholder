@@ -42,6 +42,18 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #4666FF, 0 0 20px #4666FF, 0 0 30px #4666FF, 0 0 40px #4666FF, 0 0 50px #4666FF, 0 0 60px #4666FF, 0 0 70px #4666FF, 0 0 90px #4666FF;
+    }
+    to {
+    color: #C0C0C0;
+    text-shadow: 0 0 20px #4666FF, 0 0 30px #4666FF, 0 0 40px #4666FF, 0 0 50px #4666FF, 0 0 60px #4666FF, 0 0 70px #4666FF, 0 0 80px #4666FF, 0 1 90px #4666FF;
+    }
 }
 
 section {
