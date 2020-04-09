@@ -18,7 +18,6 @@ body {
     font-family: 'Lato', sans-serif;
     color: #FFFFFF;
     background-color: #1a1d1a;
-    z-index: 20;
 }
 
 .wrapper {
@@ -72,41 +71,34 @@ img {
     border-radius: 50%;
 }
 
-.wrapper section ul {
+section ul {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
-    height: 50px;
     margin: 0 auto;
     margin-top: 30px;
     width: 100%;
     max-width: 400px;
-    position: static;
 }
 
-.wrapper section li,
-.wrapper section a {
+section li,
+section a {
     transition: ease-in-out 0.7s;
-    z-index: 40;
 }
 
-.wrapper section li {
+section li:hover,
+section a:hover {
+    transform: scale(1.2);
+}
+
+section li {
     list-style: none;
-    position: static;
-    background: none;
-    animation: none;
-    display: inline-block;
 }
 
-.wrapper section a {
+section a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 2rem;
-}
-
-.wrapper section li:hover,
-.wrapper section a:hover {
-    transform: scale(1.2) rotate(360deg);
 }
 
 /* Main styles end */
